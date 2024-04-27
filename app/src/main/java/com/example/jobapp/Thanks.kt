@@ -46,13 +46,11 @@ class Thanks : ComponentActivity() {
 
 @Composable
 fun generateLastImage(activity: ComponentActivity) {
-    //val imageUrl = "https://cdn1.vectorstock.com/i/1000x1000/50/00/round-check-mark-symbol-or-tick-vector-45245000.jpg"
     val imageUrl = "https://i.pinimg.com/564x/fc/a8/cc/fca8ccfc8f4af4188f554b0b0a6e1e3d.jpg"
     val painter = rememberAsyncImagePainter(imageUrl)
     Column(
         modifier = Modifier
-            //.fillMaxSize(),
-            .border(10.dp, Color.Green),
+           .border(10.dp, Color.Green),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
